@@ -99,6 +99,7 @@
             cmd: >-
               aapctl uninstall ao
               --kubeconfig {{ _kubeconfig_tmp.path }}
+              -y
           register: aapctl_result
           changed_when: aapctl_result.rc == 0
 
